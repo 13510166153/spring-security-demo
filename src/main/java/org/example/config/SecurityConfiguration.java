@@ -39,7 +39,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         auth.inMemoryAuthentication()
                 .withUser("admin1")//管理员，同时具有ADMIN,USER权限 ，可以访问所有资源
 //                .password("amdin1")//springboot1.x
-                .password("{noop}amdin1")
+                .password("{noop}admin1")
                 .roles("ADMIN","USER")
                 .and()
                 .withUser("user1")
